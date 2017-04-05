@@ -111,7 +111,10 @@ var EntityStore = Reflux.createStore({
             'query': that.data.searchQuery,
             'page_size': 15
         };
+
         Urls.jsonp(Urls.searchEntity, params, function(data) {
+                    
+
             if (data.status === 0) {
                 that.setEntities(data);
                 this.trigger('total', that.data.total);

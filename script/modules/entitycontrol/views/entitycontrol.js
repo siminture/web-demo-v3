@@ -40,7 +40,6 @@ var Entitycontrol = React.createClass({
         <div className={tabIndex === 0 ? 'entityControl hidden' : 'entityControl visible'} > 
             <Control />
             <Entitylist />
-            <BottomControl />
         </div>
         )
     }
